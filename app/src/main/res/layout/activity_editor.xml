@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kevin.android.inventoryapp.EditorActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_name_text"
+                style="@style/CategoryField"
+                android:text="@string/product_name" />
+
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditField"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_description_text"
+                style="@style/CategoryField"
+                android:text="@string/product_description" />
+
+            <EditText
+                android:id="@+id/edit_product_description"
+                style="@style/EditField"
+                android:hint="@string/hint_product_description"
+                android:inputType="textCapSentences" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_quantity_text"
+                style="@style/CategoryField"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/in_stock" />
+
+            <TextView
+                android:id="@+id/product_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="16dp"
+                android:text="@string/zero" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_price_text"
+                style="@style/CategoryField"
+                android:text="@string/product_price" />
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                style="@style/EditField"
+                android:hint="@string/hint_product_price"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/track_sale_text"
+                style="@style/CategoryField"
+                android:text="@string/track_sale" />
+
+            <Button
+                android:id="@+id/edit_sale_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/sale"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/track_shipment_text"
+                style="@style/CategoryField"
+                android:text="@string/track_shipment" />
+
+            <Button
+                android:id="@+id/receive_shipment_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/receive_shipment" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/plus_button"
+                    style="@style/IncrementButton"
+                    android:text="@string/plus_button" />
+
+                <TextView
+                    android:id="@+id/receive_shipment_increment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero" />
+
+                <Button
+                    android:id="@+id/minus_button"
+                    style="@style/IncrementButton"
+                    android:text="@string/minus_button" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/make_order_text"
+                style="@style/CategoryField"
+                android:text="@string/place_order" />
+
+            <Button
+                android:id="@+id/make_order_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/order_button"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/image_text"
+                style="@style/CategoryField"
+                android:text="@string/image_text" />
+
+            <ImageView
+                android:id="@+id/add_image_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:contentDescription="@string/add_image"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="@string/add_image"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delete_text"
+                style="@style/CategoryField"
+                android:text="@string/delete_product" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/delete_button"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/save_text"
+                style="@style/CategoryField"
+                android:text="@string/save_text" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/save_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="illegal_argument">Cannot query URI</string>
+    <string name="update_failed">Update failed, please change information and try again</string>
+    <string name="insert_failed">Insert failed, please change information and try again</string>
+    <string name="deletion_failure">Deletion is not supported for </string>
+    <string name="sale">Sale</string>
+    <string name="empty">The inventory list is currently empty. To add an item press the plus button in the bottom right corner of the screen.</string>
+    <string name="price">Price: $</string>
+    <string name="in_stock">In Stock: </string>
+    <string name="product_name">Product Name:</string>
+    <string name="hint_product_name">Name</string>
+    <string name="order_button">Order More</string>
+    <string name="delete_button">Delete Product</string>
+    <string name="product_description">Description:</string>
+    <string name="hint_product_description">Description</string>
+    <string name="receive_shipment">Receive Shipment</string>
+    <string name="plus_button">+</string>
+    <string name="zero">0</string>
+    <string name="minus_button">-</string>
+    <string name="track_sale">Track Sale:</string>
+    <string name="track_shipment">Track Shipment:</string>
+    <string name="product_price">Price:</string>
+    <string name="hint_product_price">Price</string>
+    <string name="place_order">Place Order</string>
+    <string name="delete_product">Delete:</string>
+    <string name="new_product">Add a new Product</string>
+    <string name="edit_product">Edit a Product</string>
+    <string name="no_email_found">No email clients found.</string>
+    <string name="fake_email">LargeSupplierChain@gmail.com</string>
+    <string name="need_more">"We need to order more "</string>
+    <string name="save_text">Save</string>
+    <string name="edit_error">Please fill out all fields and try again.</string>
+    <string name="success">Product saved successfully.</string>
+    <string name="failure">Save failed, please try again.</string>
+    <string name="blank" />
+    <string name="continue_editing">Continue Editing</string>
+    <string name="discard">Discard</string>
+    <string name="discard_and_quit">Discard changes and quit editing?</string>
+    <string name="delete">Delete</string>
+    <string name="delete_progress">Are you sure you want to delete your progress?</string>
+    <string name="delete_product_message">Are you sure you want to delete this product?</string>
+    <string name="add_image">Add an Image</string>
+    <string name="image_text">Add Image:</string>
+    <string name="unkown_uri">"Unknown uri "</string>
+    <string name="with_match"> with match </string>
+    <string name="read_database">com.kevin.android.inventoryapp.READ_DATABASE</string>
+    <string name="write_database">com.kevin.android.inventoryapp.WRITE_DATABASE</string>
+    <string name="order_more">"We would like to order more "</string>
+    <string name="please"> please.</string>
+</resources>
+
+
